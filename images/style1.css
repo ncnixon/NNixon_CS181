@@ -1,0 +1,61 @@
+* {
+  body {
+    padding: auto;
+    margin: 0;
+    font-size: medium;
+    box-sizing: border-box;
+    background-color: darkseagreen;
+    font-family: "mono", monospace;
+  }
+  #hero {
+    cursor: default;
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: darkseagreen;
+    opacity: 1;
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url("../images/HeroImage.jpg");
+    background-size: cover;
+  }
+
+  textarea {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: medium;
+    border: 2px solid black;
+    margin-top: 20px;
+  }
+  input {
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10;
+    border-color: black;
+    margin-bottom: 25px;
+  }
+  input:focus-within {
+    outline: none;
+    border-color: gold;
+    border-width: 3px;
+  }
+  textarea:focus-within {
+    outline: none;
+    border-color: gold;
+    border-width: 3px;
+  }
+}
