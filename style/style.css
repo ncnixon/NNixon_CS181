@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=mono:wght@400;700&display=swap");
 
+.header-img {
+  top: 0;
+  width: 10%;
+  height: 10%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
 body {
   padding: auto;
   margin: 0;
@@ -17,11 +25,12 @@ body {
   color: white;
   opacity: 1;
   text-align: center;
-  padding: 50px 20px;
+  padding: 50px 25px;
   background-image: url("../images/HeroImage.jpg");
   background-size: cover;
 }
 button {
+  z-index: 2;
   background-color: white;
   border-radius: 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -35,4 +44,26 @@ button {
 }
 button:hover {
   background-color: gold;
+}
+header {
+  right: 100px;
+  left: 100px;
+  z-index: 1;
+  background-color: rgba(242, 215, 42, 0.926);
+  text-align: center;
+  position: sticky;
+  height: 20;
+  top: 0;
+  right: 10;
+}
+
+.card {
+  display: inline-block;
+  max-width: 300px;
+  min-width: 220px;
+  height: 300px;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: #fffbe6;
 }

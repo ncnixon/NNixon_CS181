@@ -36,3 +36,8 @@ button {
 button:hover {
   background-color: gold;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  padding: 5px;
+}
