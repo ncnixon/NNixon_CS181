@@ -2,28 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Home - Nathaniel Nixon</title>
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link" aria-current="page">Skip to main content</a>
     <header position="sticky">
       <img src="images/Header_Image.jpg" alt="comfy couch" class="header-img" />
       <!-- this is a free downloaded image from the National Gallery of Art  -->
-      <nav>
+      <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
     <hr />
-    <main>
+    <main id="main-content">
       <section id="hero">
-        <div class="container text-align: center">Take you to Resume</div>
-        <button>
-          <a class="button" href="resume.html">View Nathaniel's Resume</a>
-        </button>
+        <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+          <span>Take you to Resume</span>
+          <button style="margin-top: 16px;">
+            <a class="button" href="resume.html" style="text-decoration: none; color: inherit;">View Nathaniel's Resume</a>
+          </button>
+        </div>
       </section>
     </main>
     <h1
@@ -34,12 +38,12 @@
         color: black;
       "
     >
-      ---Nathaniel Nixon's Projects---
+  Testimonials
     </h1>
 
-    <div align="center">
+    <div class="card-container" style="text-align: center; padding-top: 40px; ">
       <div class="card">
-        <h2>Culinary Endeavors</h2>
+        <h2>Restaurant Background</h2>
         <p>
           A place for all things restaurant, bar and service related. Hope you
           arrived hungry and thirtsy!
@@ -66,6 +70,7 @@
         </p>
         <button>
           <a class="button" href="newlink.html">View Coding Projects</a>
+        </button>
       </div>
     </div>
   </body>
