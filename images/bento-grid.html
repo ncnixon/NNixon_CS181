@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .page-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bento-grid {
+        max-width: 100%;
+        display: grid;
+        color: #790202;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .grid-item {
+        border-radius: 16px;
+        overflow: hidden;
+        height: 250px;
+      }
+
+      .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .span-2-col {
+        align-items: center;
+        grid-column: span 2;
+      }
+
+      .span-2-row {
+        grid-row: span 2;
+        height: 100%;
+      }
+
+      .grid-item.left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        border-radius: 16px;
+      }
+
+      .grid-item.left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+      }
+
+      .text-box-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 16px;
+        grid-column: span 3;
+        height: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: #401818; font-family: Arial, sans-serif">
+    <main class="page-wrapper">
+      <div class="bento-grid">
+        <div class="grid-item left span-2-col">
+          <img src="images/bento1.jpeg" alt="Yuma wide shot" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento2.jpeg" alt="Yuma pillow" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento3.jpeg" alt="Easter Yuma" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento4.jpeg" alt="Yuma Xmas Present" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento5.jpeg" alt="NYC Yuma" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento6.jpeg" alt="Snowy pup" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento7.jpeg" alt="Rattlesnake Yuma" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento8.jpeg" alt="Green Sweater" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento9.jpeg" alt="Just a Puppy" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento10.jpeg" alt="Futbol Yuma" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento11.jpeg" alt="Put your tongue away" />
+        </div>
+        <div class="grid-item">
+          <img src="images/bento12.jpeg" alt="Traveling Yuma" />
+        </div>
+        <div
+          class="grid-item text-box-right"
+          style="
+            font-family: &quot;Comic Sans MS&quot;, cursive, sans-serif;
+            background-color: #e5bfbf;
+            color: #000000;
+          "
+        >
+          <p>
+            Yuma is a 1.5 year old Chiweenie (Chihuahua + Dachshund), who stole
+            our hearts in August of 2024. She is sweet, energetic and as loving
+            as a dog could be. I hope that she brings you the joy and happiness
+            through these photos that she brings us on a daily basis.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

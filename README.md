@@ -1,1 +1,1 @@
-Nathaniel Nixon resume page & home page.
+Nathaniel Nixon resume page, contact page & home page.
