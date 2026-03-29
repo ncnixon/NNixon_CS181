@@ -67,6 +67,7 @@ function stoppingForGas(Total_Distance, totalGasAvailable, gas_stops) {
     console.log("You have enough gas for the trip.");
   }
 }
+console.log("Driver Name:", Driver_Name);
 
 let Gallons_Needed = calculateGallonsNeeded(Total_Distance, MPG);
 console.log("Gallons Needed:", Gallons_Needed.toFixed(2));
