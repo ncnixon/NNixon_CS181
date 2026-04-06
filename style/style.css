@@ -12,7 +12,8 @@ body {
   margin: 0;
   font-size: medium;
   box-sizing: border-box;
-  background-color: darkseagreen;
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: "mono", monospace;
 }
 
@@ -21,7 +22,7 @@ body {
   width: 100vw;
   height: auto;
   margin: 0;
-  color: white;
+  color: var(--hero-text);
   opacity: 1;
   display: flex;
   flex-direction: column;
@@ -29,30 +30,32 @@ body {
   align-items: center;
   text-align: center;
   padding: 50px 25px;
+  background-color: var(--hero-bg);
   background-image: url("../images/HeroImage.jpg");
   background-size: cover;
 }
 button {
   z-index: 2;
-  background-color: white;
+  background-color: var(--button-bg);
   border-radius: 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: black;
+  color: var(--button-text);
   opacity: 0.8;
   padding: 10px 20px;
-  border: 2px solid black;
+  border: 2px solid var(--button-border);
   cursor: pointer;
   font-size: medium;
   margin-top: 20px;
 }
 button:hover {
-  background-color: gold;
+  background-color: var(--button-hover-bg);
 }
 header {
   right: 100px;
   left: 100px;
   z-index: 1;
-  background-color: rgba(242, 215, 42, 0.926);
+  background-color: var(--header-bg);
+  color: var(--text-color);
   text-align: center;
   position: sticky;
   height: auto;
@@ -74,9 +77,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-shadow);
   border-radius: 12px;
-  background: #fffbe6;
+  background: var(--card-bg);
+  color: var(--text-color);
+  text-align: center;
 }
 
 .skip-link {
@@ -84,8 +89,10 @@ header {
   left: -999px;
   top: 0;
   padding: 0.5rem 0.75rem;
-  background: #000; /* Feel free to adjust look and feel for your site */
-  color: #fff;
+  background: var(
+    --skip-link-bg
+  ); /* Feel free to adjust look and feel for your site */
+  color: var(--skip-link-text);
   border-radius: 0.5rem;
 }
 .skip-link:focus {
@@ -107,5 +114,43 @@ nav a[aria-current="page"] {
     transition-duration: 0.01ms !important;
     transition-delay: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@layer base {
+  :root {
+    --primary-color: #f2d72a;
+    --secondary-color: #ffffff;
+    --background-color: darkseagreen;
+    --text-color: #080808;
+    --hero-bg: darkseagreen;
+    --hero-text: white;
+    --button-bg: white;
+    --button-hover-bg: gold;
+    --button-text: black;
+    --header-bg: rgba(242, 215, 42, 0.926);
+    --card-bg: #fffbe6;
+    --skip-link-bg: #000;
+    --skip-link-text: #fff;
+    --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --button-border: black;
+  }
+
+  body.dark-mode {
+    --primary-color: #222222;
+    --secondary-color: #222222;
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --hero-bg: #000000;
+    --hero-text: #f4f4f4;
+    --button-bg: #222222;
+    --button-hover-bg: #121212;
+    --button-text: #f2d72a;
+    --header-bg: #000000;
+    --card-bg: #222222;
+    --skip-link-bg: #fff;
+    --skip-link-text: #222222;
+    --card-shadow: 0 4px 8px 0 rgba(242, 215, 42, 0.2);
+    --button-border: #f2d72a;
   }
 }

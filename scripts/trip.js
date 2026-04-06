@@ -12,8 +12,10 @@ let Is_Round_Trip = true; // Set default to true for demonstration
 let Total_Distance = undefined;
 let gas_stops = 0;
 
+
 /// Derived/Calculated Variables ///
 /// ------------------------------ ///
+
 
 /// calculates total gas available ///
 function calculateTotalGasAvailable(Fuel_Capacity, MPG) {
@@ -68,6 +70,9 @@ function stoppingForGas(Total_Distance, totalGasAvailable, gas_stops) {
   }
 }
 console.log("Driver Name:", Driver_Name);
+
+
+
 
 let Gallons_Needed = calculateGallonsNeeded(Total_Distance, MPG);
 console.log("Gallons Needed:", Gallons_Needed.toFixed(2));
