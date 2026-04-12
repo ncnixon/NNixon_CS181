@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: #fcea91;
+}
+#weather-output {
+  font-size: 1.2em;
+  text-align: center;
+}
+.temperature {
+  justify-content: center;
+  font-size: 6em;
+  font-weight: bold;
+}
+.section-title {
+  font-size: 50px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.isloading {
+    color: rgb(66, 109, 184);
+}
+.errormessage {
+    color: rgb(255, 0, 0);
+}
